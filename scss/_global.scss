@@ -14,5 +14,27 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
+    background-color: $dark-blue-4;
 }
 
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+
+footer{
+    text-align: center;
+    
+    a{
+        color: #fff;
+    }
+}
