@@ -3,34 +3,58 @@
     background-image: linear-gradient($dark-blue-4 66%, $dark-blue-2 34%);
     padding-bottom: 50px;
 
-    @media (min-width: $large-tablet) {
+    @media (min-width: $small-tablet) {
         background-image: none;
         background-color: $dark-blue-4;
     }
-    &::after{
-        content: '';
-        position: absolute;
-        bottom: 23%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        height: 145px;
-        background-image: url('/dist/images/bg-curvy-mobile.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        z-index: 10;
 
-        @media only screen and (min-width: 1401px) and (max-width: 1439px)  {
-           
-        }
+    .mobile-curvy {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 33%;
+
         @media (min-width: $small-tablet) {
-            height: 449px;
-            // transform: translateY(0);
-            bottom: -22%;
-            background-image: url('/dist/images/bg-curvy-desktop.svg');
+            display: none;
         }
     }
+    .destop-curvy {
+        display: none;
+
+        @media (min-width: $small-tablet) {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    // &::after{
+    //     content: '';
+    //     position: absolute;
+    //     bottom: 23%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     width: 100%;
+    //     height: 145px;
+    //     background-image: url('/dist/images/bg-curvy-mobile.svg');
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     background-size: contain;
+    //     z-index: 10;
+
+    //     @media only screen and (min-width: 1401px) and (max-width: 1439px)  {
+           
+    //     }
+    //     @media (min-width: $small-tablet) {
+    //         height: 449px;
+    //         // transform: translateY(0);
+    //         bottom: -22%;
+    //         background-image: url('/dist/images/bg-curvy-desktop.svg');
+    //     }
+    // }
     &__container {
         position: relative;
         z-index: 1000;
