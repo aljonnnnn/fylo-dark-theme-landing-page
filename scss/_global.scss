@@ -14,7 +14,6 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
-    background-color: $dark-blue-4;
 }
 
 a {
@@ -32,6 +31,8 @@ li {
 
 
 footer{
+    padding: 10px;
+    background-color: $dark-blue-1;
     text-align: center;
     
     a{
