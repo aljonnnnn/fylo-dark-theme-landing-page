@@ -1,11 +1,11 @@
 .hero {
     position: relative;
-    background-image: linear-gradient($dark-blue-4 66%, $dark-blue-2 34%);
+    background-image: linear-gradient($dark-blue-1 66%, $dark-blue-2 34%);
     padding-bottom: 50px;
 
     @media (min-width: $small-tablet) {
         background-image: none;
-        background-color: $dark-blue-4;
+        background-color: $dark-blue-1;
     }
 
     .mobile-curvy {
@@ -31,30 +31,6 @@
         }
     }
 
-    // &::after{
-    //     content: '';
-    //     position: absolute;
-    //     bottom: 23%;
-    //     left: 50%;
-    //     transform: translate(-50%, -50%);
-    //     width: 100%;
-    //     height: 145px;
-    //     background-image: url('/dist/images/bg-curvy-mobile.svg');
-    //     background-position: center;
-    //     background-repeat: no-repeat;
-    //     background-size: contain;
-    //     z-index: 10;
-
-    //     @media only screen and (min-width: 1401px) and (max-width: 1439px)  {
-           
-    //     }
-    //     @media (min-width: $small-tablet) {
-    //         height: 449px;
-    //         // transform: translateY(0);
-    //         bottom: -22%;
-    //         background-image: url('/dist/images/bg-curvy-desktop.svg');
-    //     }
-    // }
     &__container {
         position: relative;
         z-index: 1000;
@@ -79,9 +55,16 @@
     &__img {
         margin-top: 48px;
         margin-bottom: 37px;
-        @media (max-width: $desktop) {
+        @media (min-width: $desktop) {
             margin-top: 78px;
             margin-bottom: 34px;
+        }
+
+        // my screen
+        @media screen and (min-width: 1280px) and (max-width: 1366px) { 
+            margin-top: -32px;
+            max-width: 313px;
+            height: auto;
         }
     }
 
@@ -129,6 +112,8 @@
         border-radius: 30px;
         color: $white-color;
         background: $blue-color;
+        font-family: $heading-font;
+        font-size: 14px;
         font-weight: 700;
         transition: all 0.3s ease;
 

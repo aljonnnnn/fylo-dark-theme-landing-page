@@ -33,10 +33,14 @@ li {
 
 footer{
     padding: 10px;
-    background-color: $dark-blue-1;
+    background-color: $dark-blue-3;
     text-align: center;
     
+    p{
+        color: $white-color;
+    }
+
     a{
-        color: #fff;
+        color: $cyan-color;
     }
 }
