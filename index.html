@@ -8,6 +8,9 @@
   
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <!-- main style -->
   <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
@@ -248,7 +251,46 @@
   Terms
   Privacy -->
 
-  <footer>
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="" class="footer__logo"><img src="dist/images/logo.svg" alt=""></a>
+      <div class="footer__flex">
+        <div class="footer__item">
+          <div class="footer__box">
+            <i class="footer__info-icon fas fa-map-marker-alt"></i>
+            <p class="footer__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__box">
+            <i class="footer__info-icon fas fa-phone"></i>
+            <p class="footer__info-paragraph">+1-543-123-4567</p>
+          </div>
+          <div class="footer__box">
+            <i class="footer__info-icon fas fa-envelope"></i>
+            <p class="footer__info-paragraph">example@fylo.com</p>
+          </div>
+        </div>
+        <div class="footer__item">
+          <span class="footer__heading-link">About Us</span>
+          <a class="footer__link" href="#">Jobs</a>
+          <a class="footer__link" href="#">Press</a>
+          <a class="footer__link" href="#">Blog</a>
+        </div>
+        <div class="footer__item">
+          <span class="footer__heading-link">Contact Us</span>
+          <a class="footer__heading-link" href="#">Terms</a>
+          <a class="footer__heading-link" href="#">Privacy</a>
+        </div>
+        <div class="footer__item">
+          <div class="footer__social">
+            <span class="footer__social-icon"><i class="fab fa-facebook-f"></i></span>
+            <span class="footer__social-icon"><i class="fab fa-twitter"></i></span>
+            <span class="footer__social-icon"><i class="fab fa-instagram"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/aljonnnnn">Aljon De Lumen</a>.
