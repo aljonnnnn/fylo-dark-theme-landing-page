@@ -1,23 +1,23 @@
 .footer{
-    padding: 74px 10px 0;
+    padding: 4.625rem 0.625rem 0;
     background-color: $dark-blue-3;
 
     &__container {
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding: 0 20px;
+        padding: 0 1.25rem;
 
         @media (min-width: $large-tablet) {
-            padding: 0 45px;
-            max-width: 1242px;
+            padding: 0 2.8125rem;
+            max-width: 77.625rem;
         }
     }
 
     &__logo img{
-        max-width: 176px;
+        max-width: 11rem;
         height: auto;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
 
     &__flex {
@@ -30,7 +30,7 @@
         width: 100%;
         
         &:not(:first-child) {
-            margin-bottom: 40px;
+            margin-bottom: 2.5rem;
         }
 
         &:nth-child(2) {
@@ -38,7 +38,7 @@
                 align-items: center;
 
                 &:first-child {
-                    margin-bottom: 7px;
+                    margin-bottom: 0.4375rem;
                 }
             }
         }
@@ -57,7 +57,7 @@
         @media (min-width: $desktop) {
             &:nth-child(1), &:nth-child(2) {
                 width: 30%;
-                padding-right: 10px;
+                padding-right: 0.625rem;
             }
             &:nth-child(3), &:nth-child(4), &:nth-child(5) {
                 width: 13.33333333333333%;
@@ -71,28 +71,28 @@
 
     &__info-icon {
         // display: block;
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
         font-size: 20px;
-        line-height: 15px;
+        line-height: 0.9375rem;
         color: $white-color;
         text-align: center;
-        margin-right: 18px;
-        padding: 7px;
+        margin-right: 1.125rem;
+        padding: 0.4375rem;
     }
 
     &__paragraph {
         font-family: $body-font;
         color: $white-color;
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 1.5;
-        margin-bottom: 7px;
+        margin-bottom: 0.4375rem;
     }
     
     &__info-paragraph {
         font-family: $body-font;
         color: $white-color;
-        font-size: 14px;
+        font-size: 0.875rem;
 
     }
 
@@ -100,20 +100,20 @@
         display: block;
         font-family: $heading-font;
         color: $white-color;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
 
     &__link {
         display: block;
         font-family: $body-font;
         color: $white-color;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
 
         &:not(:last-child) {
-            margin-bottom: 16px;
+            margin-bottom: 1rem;
         }
     }
 
@@ -123,23 +123,29 @@
 
     &__social-icon {
         display: inline-block;
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
         border: 1px solid $white-color;
         border-radius: 50%;
-        font-size: 16px;
-        line-height: 32px;
+        font-size: 0.875rem;
+        line-height: 2rem;
         text-align: center;
         color: $white-color;
-        margin-left: 6px;
-        margin-right: 6px;
+        margin-left: 0.375rem;
+        margin-right: 0.375rem;
+        transition: all 0.3s ease;
+
+        &:hover{
+            border: 1px solid $cyan-color;
+            color: $cyan-color;
+        }
     }
 
     .attribution{
         text-align: center;
-        font-size: 12px;
+        font-size: 0.75rem;
         color: $white-color;
-        padding-bottom: 10px;
+        padding-bottom: 0.625rem;
     }
 
     .attribution a{

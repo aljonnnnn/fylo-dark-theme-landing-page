@@ -1,13 +1,13 @@
 .features {
     background-color: $dark-blue-2;
-    padding: 50px 0;
+    padding: 3.125rem 0;
 
     &__container{
         margin-left: auto;
         margin-right: auto;
         
         @media (min-width: $large-tablet) {
-            max-width: 1020px;
+            max-width: 63.75rem;
         }
     }
 
@@ -22,41 +22,41 @@
     &__item {
         width: 100%;
         text-align: center;
-        padding: 27px;
+        padding: 1.6875rem;
 
         
         @media (min-width: $small-tablet) {
             width: 50%;
-            padding: 50px;
+            padding: 3.125rem;
         }
     }
 
     &__img {
-        max-width: 71px;
-        margin-bottom: 30px;
+        max-width: 4.4375rem;
+        margin-bottom: 1.875rem;
 
         @media (min-width: $large-tablet) {
-            max-width: 86px;
-            margin-bottom: 20px;
+            max-width: 5.375rem;
+            margin-bottom: 1.25rem;
         }
     }
 
     &__heading {
         font-family: $heading-font;
         color: $white-color;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 700;
-        margin-bottom: 8px;
+        margin-bottom: 0.5rem;
 
         @media (min-width: $large-tablet) {
-            font-size: 20px;
+            font-size: 1.25rem;
         }
     }
 
     &__paragraph {
         font-family: $body-font;
         color: $white-color;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 400;
     }
 }
